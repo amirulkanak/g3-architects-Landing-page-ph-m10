@@ -435,7 +435,14 @@ body {
 
 @media (max-width: 893px) {
   .badge-card {
-    left: 0px;
+    left: 50%;
+    margin-left: -10.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .badge-card {
+    margin-left: -5.125rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-top: 1.5rem;
@@ -452,7 +459,7 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 893px) {
+@media (max-width: 576px) {
   .badge-card-tittle {
     font-size: 2.5rem;
   }
@@ -467,11 +474,228 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 893px) {
+@media (max-width: 576px) {
   .badge-card-subtittle {
     font-size: 1.25rem;
     line-height: 1rem;
   }
 }
 
-/* next section mt-[12.94rem] */
+/*=== Facts Section ===*/
+
+.facts {
+  margin-top: 12.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1325px) {
+  .facts {
+    margin-top: 10rem;
+    align-items: center;
+  }
+}
+
+.facts-tittle {
+  text-align: left;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 3.313rem;
+  color: rgba(19, 19, 19, 1);
+}
+
+@media (max-width: 1325px) {
+  .facts-tittle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .facts-tittle {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.facts-description {
+  margin-top: 1.5rem;
+  max-width: 33.875rem;
+  text-wrap: pretty;
+  text-align: left;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.625rem;
+  color: rgba(114, 114, 114, 1);
+}
+
+@media (max-width: 1325px) {
+  .facts-description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .facts-description {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+/* == card == */
+
+.facts-achievement {
+  margin-top: 6.26rem;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1325px) {
+  .facts-achievement {
+    margin-top: 4rem;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
+.achievement-card {
+  display: flex;
+  width: 15.11444rem;
+  height: 15.11444rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 144, 14, 1);
+}
+
+.achievement-tittle {
+  margin-top: 0.62rem;
+  text-align: center;
+  font-size: 2.8125rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 3.313rem;
+  color: rgba(66, 66, 66, 1);
+}
+
+.achievement-description {
+  margin-top: 0.31rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.625rem;
+  color: rgba(114, 114, 114, 1);
+}
+
+/*=== Sponsors ===*/
+
+.sponsors {
+  margin-top: 11.26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1325px) {
+  .sponsors {
+    margin-top: 6rem;
+  }
+}
+
+.sponsors-tittle {
+  text-align: center;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 3.313rem;
+  color: rgba(19, 19, 19, 1);
+}
+
+@media (max-width: 576px) {
+  .sponsors-tittle {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.sponsors-description {
+  margin-top: 1.5rem;
+  max-width: 33.875rem;
+  text-wrap: pretty;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.625rem;
+  color: rgba(114, 114, 114, 1);
+}
+
+@media (max-width: 576px) {
+  .sponsors-description {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.sponsors-logos {
+  margin-top: 3.12rem;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1325px) {
+  .sponsors-logos {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.sponsors-logo {
+  filter: grayscale(100%);
+}
+
+/*=== Footer ===*/
+
+.footer {
+  margin-top: 8.13rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 244, 231, 1);
+  padding-top: 2.44rem;
+  padding-bottom: 2.44rem;
+  text-align: center;
+}
+
+@media (max-width: 1325px) {
+  .footer {
+    margin-top: 6rem;
+  }
+}
+
+.footer-terms {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.438rem;
+  color: rgba(66, 66, 66, 1);
+}
