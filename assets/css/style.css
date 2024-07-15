@@ -344,6 +344,13 @@ body {
   color: rgba(19, 19, 19, 1);
 }
 
+@media (max-width: 576px) {
+  .details-tittle {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
 .details-description {
   text-wrap: pretty;
   text-align: left;
